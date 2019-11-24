@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Directory</string>
+
+    <!-- Titles -->
+    <string name="people_title">People</string>
+
+    <!-- UI -->
+    <string name="retry_button">Retry</string>
+    <string name="people_button">People</string>
+    <string name="rooms_button">Rooms</string>
+
+    <!-- Error messages -->
+    <string name="people_list_failure">Could not retrieve the list of people</string>
+
+    <!-- Accessibility descriptions -->
+    <string name="avatar_description">The user\'s avatar</string>
+</resources>
