@@ -1,4 +1,4 @@
-package com.jpurvis.directory.data;
+package com.jpurvis.directory.model;
 
 import com.jpurvis.directory.config.Util;
 

@@ -2,7 +2,7 @@ package com.jpurvis.directory.ui.people;
 
 import androidx.lifecycle.ViewModel;
 
-import com.jpurvis.directory.data.Person;
+import com.jpurvis.directory.model.Person;
 import com.jpurvis.directory.network.people.PeopleServiceTask;
 
 import org.json.JSONArray;

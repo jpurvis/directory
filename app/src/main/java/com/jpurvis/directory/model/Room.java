@@ -1,4 +1,4 @@
-package com.jpurvis.directory.data;
+package com.jpurvis.directory.model;
 
 import org.json.JSONException;
 import org.json.JSONObject;

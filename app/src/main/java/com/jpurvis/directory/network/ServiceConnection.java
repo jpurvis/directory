@@ -59,20 +59,12 @@ public abstract class ServiceConnection extends AsyncTask<String, String, String
         return responseCode;
     }
 
-    /**
-     * Builds the connection request that the app needs to send to the service
-     *
-     * @param url - the service url
-     **/
     private HttpsURLConnection createConnection(URL url) throws IOException {
         HttpsURLConnection httpConnection;
         httpConnection = (HttpsURLConnection) url.openConnection();
         return httpConnection;
     }
 
-    /**
-     * Receive the response and convert it to a string to return
-     **/
     private String responseString(int statusCode, HttpsURLConnection httpConnection) throws IOException {
         BufferedReader reader;
         if (statusCode < 300) {
@@ -87,9 +79,6 @@ public abstract class ServiceConnection extends AsyncTask<String, String, String
         return builder.toString();
     }
 
-    /**
-     * HTTP Error response with status code.
-     **/
     private String httpError(int errorCode) {
         return String.valueOf(errorCode);
     }

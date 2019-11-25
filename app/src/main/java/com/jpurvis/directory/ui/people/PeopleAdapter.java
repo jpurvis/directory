@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.jpurvis.directory.R;
-import com.jpurvis.directory.data.Person;
+import com.jpurvis.directory.model.Person;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

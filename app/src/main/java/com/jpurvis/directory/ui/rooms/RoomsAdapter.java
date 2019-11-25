@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.jpurvis.directory.R;
-import com.jpurvis.directory.data.Room;
+import com.jpurvis.directory.model.Room;
 
 import java.util.ArrayList;
 

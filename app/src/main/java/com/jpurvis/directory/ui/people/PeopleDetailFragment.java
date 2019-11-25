@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import com.jpurvis.directory.R;
-import com.jpurvis.directory.data.Person;
+import com.jpurvis.directory.model.Person;
 import com.squareup.picasso.Picasso;
 
 public class PeopleDetailFragment extends Fragment {

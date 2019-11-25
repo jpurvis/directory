@@ -2,7 +2,7 @@ package com.jpurvis.directory.ui.rooms;
 
 import androidx.lifecycle.ViewModel;
 
-import com.jpurvis.directory.data.Room;
+import com.jpurvis.directory.model.Room;
 import com.jpurvis.directory.network.rooms.RoomsServiceTask;
 
 import org.json.JSONArray;

@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.jpurvis.directory.R;
-import com.jpurvis.directory.data.Person;
+import com.jpurvis.directory.model.Person;
 
 import java.util.ArrayList;
 
