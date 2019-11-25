@@ -8,8 +8,8 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
-import com.jpurvis.directory.ui.main.MainActivity;
 import com.jpurvis.directory.R;
+import com.jpurvis.directory.ui.main.MainActivity;
 
 public class PeopleActivity extends AppCompatActivity {
 

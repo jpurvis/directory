@@ -36,7 +36,7 @@ public class MainFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         mViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
 
-        if(getView() != null) {
+        if (getView() != null) {
             Button peopleButton = getView().findViewById(R.id.people_button);
             peopleButton.setOnClickListener(new View.OnClickListener() {
                 @Override

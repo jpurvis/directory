@@ -10,7 +10,7 @@ import org.json.JSONException;
 
 import java.util.ArrayList;
 
-public class RoomViewModel extends ViewModel implements RoomsServiceTask.RoomsTaskListener {
+public class RoomsViewModel extends ViewModel implements RoomsServiceTask.RoomsTaskListener {
     private ArrayList<Room> rooms;
     private UpdateRoomUIListener updateRoomUIListener;
 

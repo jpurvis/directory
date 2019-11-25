@@ -12,8 +12,8 @@ import com.jpurvis.directory.data.Room;
 
 import java.util.ArrayList;
 
-public class RoomAdapter extends ArrayAdapter<Room> {
-    RoomAdapter(Context context, ArrayList<Room> rooms) {
+public class RoomsAdapter extends ArrayAdapter<Room> {
+    RoomsAdapter(Context context, ArrayList<Room> rooms) {
         super(context, 0, rooms);
     }
 

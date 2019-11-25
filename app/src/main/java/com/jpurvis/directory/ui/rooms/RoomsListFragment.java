@@ -16,9 +16,9 @@ import com.jpurvis.directory.data.Room;
 
 import java.util.ArrayList;
 
-public class RoomsListFragment extends Fragment implements RoomViewModel.UpdateRoomUIListener {
+public class RoomsListFragment extends Fragment implements RoomsViewModel.UpdateRoomUIListener {
 
-    private RoomViewModel mViewModel;
+    private RoomsViewModel mViewModel;
     private ListView roomList;
 
     static RoomsListFragment newInstance() {
@@ -36,7 +36,7 @@ public class RoomsListFragment extends Fragment implements RoomViewModel.UpdateR
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        mViewModel = ViewModelProviders.of(this).get(RoomViewModel.class);
+        mViewModel = ViewModelProviders.of(this).get(RoomsViewModel.class);
         mViewModel.loadData(this);
 
         if (getView() != null) {
@@ -47,7 +47,7 @@ public class RoomsListFragment extends Fragment implements RoomViewModel.UpdateR
     @Override
     public void updateWithRooms(ArrayList<Room> rooms) {
         if (roomList != null) {
-            RoomAdapter roomAdapter = new RoomAdapter(getContext(), rooms);
+            RoomsAdapter roomAdapter = new RoomsAdapter(getContext(), rooms);
             roomList.setAdapter(roomAdapter);
         }
     }

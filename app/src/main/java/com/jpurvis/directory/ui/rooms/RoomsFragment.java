@@ -13,9 +13,9 @@ import androidx.lifecycle.ViewModelProviders;
 import com.jpurvis.directory.R;
 import com.jpurvis.directory.ui.people.PeopleListFragment;
 
-public class RoomFragment extends Fragment {
+public class RoomsFragment extends Fragment {
 
-    private RoomViewModel mViewModel;
+    private RoomsViewModel mViewModel;
 
     public static PeopleListFragment newInstance() {
         return new PeopleListFragment();
@@ -31,7 +31,7 @@ public class RoomFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(RoomViewModel.class);
+        mViewModel = ViewModelProviders.of(this).get(RoomsViewModel.class);
         // TODO: Use the ViewModel
     }
 }
