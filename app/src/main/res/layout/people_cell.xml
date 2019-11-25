@@ -1,38 +1,38 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:id="@+id/imageContainer"
+<LinearLayout
+    android:id="@+id/imageContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="60dp">
+
+    <ImageView
+        android:id="@+id/avatar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minWidth="60dp">
+        android:contentDescription="@string/avatar_description" />
+</LinearLayout>
 
-        <ImageView
-            android:id="@+id/avatar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/avatar_description" />
-    </LinearLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toEndOf="@+id/imageContainer"
+    android:layout_marginStart="10dp">
 
-    <RelativeLayout
+    <TextView
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/imageContainer"
-        android:layout_marginStart="10dp">
+        android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20sp" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name" />
 
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/name" />
-
-    </RelativeLayout>
+</RelativeLayout>
 
 </RelativeLayout>

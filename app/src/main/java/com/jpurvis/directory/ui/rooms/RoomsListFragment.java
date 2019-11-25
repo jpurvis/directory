@@ -1,4 +1,4 @@
-package com.jpurvis.directory.ui.people;
+package com.jpurvis.directory.ui.rooms;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,50 +12,50 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.jpurvis.directory.R;
-import com.jpurvis.directory.data.Person;
+import com.jpurvis.directory.data.Room;
 
 import java.util.ArrayList;
 
-public class PeopleListFragment extends Fragment implements PeopleViewModel.UpdatePeopleUIListener {
+public class RoomsListFragment extends Fragment implements RoomViewModel.UpdateRoomUIListener {
 
-    private PeopleViewModel mViewModel;
-    private ListView peopleList;
+    private RoomViewModel mViewModel;
+    private ListView roomList;
 
-    static PeopleListFragment newInstance() {
-        return new PeopleListFragment();
+    static RoomsListFragment newInstance() {
+        return new RoomsListFragment();
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.people_list_fragment, container, false);
+        return inflater.inflate(R.layout.room_list_layout, container, false);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        mViewModel = ViewModelProviders.of(this).get(PeopleViewModel.class);
+        mViewModel = ViewModelProviders.of(this).get(RoomViewModel.class);
         mViewModel.loadData(this);
 
         if (getView() != null) {
-            peopleList = getView().findViewById(R.id.people_list);
+            roomList = getView().findViewById(R.id.room_list);
         }
     }
 
     @Override
-    public void updateWithPeople(ArrayList<Person> people) {
-        if (peopleList != null) {
-            PeopleAdapter peopleAdapter = new PeopleAdapter(getContext(), people);
-            peopleList.setAdapter(peopleAdapter);
+    public void updateWithRooms(ArrayList<Room> rooms) {
+        if (roomList != null) {
+            RoomAdapter roomAdapter = new RoomAdapter(getContext(), rooms);
+            roomList.setAdapter(roomAdapter);
         }
     }
 
     @Override
     public void failedToUpdate() {
-        if (peopleList != null) {
-            peopleList.setVisibility(View.GONE);
+        if (roomList != null) {
+            roomList.setVisibility(View.GONE);
         }
     }
 }

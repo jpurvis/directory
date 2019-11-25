@@ -3,14 +3,20 @@
 
     <!-- Titles -->
     <string name="people_title">People</string>
+    <string name="rooms_title">Rooms</string>
 
     <!-- UI -->
     <string name="retry_button">Retry</string>
+
     <string name="people_button">People</string>
+
     <string name="rooms_button">Rooms</string>
+    <string name="room_is_occupied">Occupied</string>
+    <string name="room_is_unoccupied">Unoccupied</string>
 
     <!-- Error messages -->
     <string name="people_list_failure">Could not retrieve the list of people</string>
+    <string name="room_list_failure">Could not retrieve the list of rooms</string>
 
     <!-- Accessibility descriptions -->
     <string name="avatar_description">The user\'s avatar</string>

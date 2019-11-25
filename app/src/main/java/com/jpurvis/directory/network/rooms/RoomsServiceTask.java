@@ -2,15 +2,17 @@ package com.jpurvis.directory.network.rooms;
 
 import com.jpurvis.directory.network.ServiceConnection;
 
+import org.json.JSONArray;
+
 public abstract class RoomsServiceTask extends ServiceConnection {
 
     private String roomsEndpoint = "rooms";
 
-    String roomsRequest() {
+    public String roomsRequest() {
         return connect(roomsEndpoint);
     }
 
     public interface RoomsTaskListener {
-        void onRoomsRetrieved(String rooms);
+        void onRoomsRetrieved(JSONArray rooms);
     }
 }

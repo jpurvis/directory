@@ -26,12 +26,6 @@ public class PeopleActivity extends AppCompatActivity {
         setUpActionBar();
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        setUpActionBar();
-    }
-
     public void setUpActionBar() {
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {

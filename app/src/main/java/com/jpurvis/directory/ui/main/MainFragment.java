@@ -14,6 +14,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.jpurvis.directory.R;
 import com.jpurvis.directory.ui.people.PeopleActivity;
+import com.jpurvis.directory.ui.rooms.RoomsActivity;
 
 public class MainFragment extends Fragment {
 
@@ -41,6 +42,14 @@ public class MainFragment extends Fragment {
                 @Override
                 public void onClick(View view) {
                     startActivity(new Intent(getActivity(), PeopleActivity.class));
+                }
+            });
+
+            Button roomButton = getView().findViewById(R.id.room_button);
+            roomButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startActivity(new Intent(getActivity(), RoomsActivity.class));
                 }
             });
         }
